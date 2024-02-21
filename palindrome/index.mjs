@@ -8,4 +8,14 @@
 // palindrome("abba") === true
 // palindrome("abcdefg") === false
 
-export const palindrome = (str) => {};
+export const palindrome = (str) => {
+  //   if (str === str.split("").reverse().join("")) {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  return str === str.split("").reverse().join("");
+};
+
+console.log(palindrome("abba"));
+console.log(palindrome("abcdefg"));
